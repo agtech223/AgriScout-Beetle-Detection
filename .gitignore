@@ -1,3 +1,10 @@
 data/
-yolo11n.pt
+Weights/
+yolov5su.pt
 yolov8s.pt
+yolov9s.pt
+yolov10s.pt
+yolo11s.pt
+yolo12s.pt
+runs/
+yolo11n.pt
