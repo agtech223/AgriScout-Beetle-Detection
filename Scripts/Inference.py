@@ -1,15 +1,16 @@
 import os
 from ultralytics import YOLO
+from pathlib import Path
 
 def run_benchmarks():
-    # List of models to benchmark
+    # List of models to benchmark from the Weights folder
     models_to_benchmark = [
-        #'yolov5s.pt',
-        #'yolov8s.pt',
-        #'yolov9s.pt',
-        #'yolov10s.pt',
-        #'yolo11s.pt',
-        'yolo12s.pt'
+        'Weights/5s.pt',
+        'Weights/8s.pt',
+        'Weights/9s.pt',
+        'Weights/10s.pt',
+        'Weights/11s.pt',
+        'Weights/12s.pt'
     ]
 
     # Path to your dataset yaml
@@ -20,21 +21,20 @@ def run_benchmarks():
         print(f"Dataset config {dataset_yaml} does not exist.")
         return
 
-    for model_name in models_to_benchmark:
-        print(f"\n--- Benchmarking {model_name} ---")
+    for model_path in models_to_benchmark:
+        print(f"\n--- Benchmarking {model_path} ---")
         try:
             # Load the model
-            model = YOLO(model_name)
+            model = YOLO(model_path)
 
-            # Benchmark on your dataset
-            # Note: benchmark() by default checks multiple export formats. 
-            # If you only want speed/accuracy on PyTorch, you might just want val()
-            # but the user specifically asked for benchmark.
+            # Run benchmark
+            # Note: benchmark() runs performance tests across different formats.
+            # It doesn't support 'project' and 'name' like predict() does.
             results = model.benchmark(data=dataset_yaml, imgsz=img_size)
             
-            print(f"Finished benchmarking {model_name}")
+            print(f"Finished benchmarking {model_path}")
         except Exception as e:
-            print(f"Error benchmarking {model_name}: {e}")
+            print(f"Error benchmarking {model_path}: {e}")
 
 if __name__ == "__main__":
     run_benchmarks()

@@ -6,11 +6,11 @@ import glob
 
 # Configuration
 MODELS_TO_TEST = [
-    #"yolov5s.pt",
-    #"yolov8s.pt",
-    #"yolov9s.pt",
-    #"yolov10s.pt",
-    #"yolo11s.pt",
+    "yolov5s.pt",
+    "yolov8s.pt",
+    "yolov9s.pt",
+    "yolov10s.pt",
+    "yolo11s.pt",
     "yolo12s.pt" 
 ]
 SEEDS = [42] 
@@ -21,7 +21,7 @@ PROJECT_DIR = r"c:\Users\Bioresources\Desktop\GitHub\AgriScout-Beetle-Detection\
 TRAIN_ARGS = {
     # Training params
     "epochs": 200,
-    "batch": 8, # Adjust based on your GPU memory
+    "batch": -1, # Adjust based on your GPU memory
     "imgsz": 1280,
     "patience": 50,
     "lr0": 0.01,
