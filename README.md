@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Detection Result](Git_Images/Result1.png)
+![Graph Abstract](Git_Images/Graph_Abstract.png)
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-ee4c2c?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
@@ -16,6 +16,11 @@
 ## 🚀 Overview
 
 This repository contains the implementation and evaluation of deep learning models for real-time pest detection in potato crops, specifically optimized for edge inference on the AgriScout robot. The project compares various YOLO architectures to find the optimal balance between accuracy and latency for field deployment.
+
+## 📥 Data & Weights
+
+- **Trained Model Weights:** [Download from Google Drive](https://drive.google.com/drive/folders/11pgYOwI2JvhArmhCEP6eWZRKStDOUWNG?usp=sharing)
+- **Subset Dataset:** [Download from Google Drive](https://drive.google.com/drive/folders/16nKYBllKBIP34m2wgGFrXMrHCi6wg1dj?usp=sharing)
 
 ## 💻 Installation
 
@@ -49,7 +54,9 @@ To evaluate the trained models on the test set and generate comprehensive perfor
 python Scripts/Eval.py
 ```
 
-This script performs multiple evaluation runs with different seeds to ensure statistical robustness. The summary results are exported to [Inference_results/](Inference_results/).
+This script performs multiple evaluation runs with different seeds to ensure statistical robustness.
+
+![Detection Result](Git_Images/Result1.png)
 
 ## 🤖 Edge Inference (Jetson Orin Nano Super)
 
@@ -78,8 +85,6 @@ python Scripts/Inference.py
 - [data/](data/): Dataset configuration and image/label directories.
 - [Scripts/](Scripts/): Core execution scripts for training, evaluation, and inference.
 - [Weights/](Weights/): Pre-trained and fine-tuned model weights.
-- [Inference_results/](Inference_results/): Detailed metrics and comparison CSVs.
-- [Git_Images/](Git_Images/): Visual assets for documentation.
 
 ---
 
