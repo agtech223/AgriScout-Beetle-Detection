@@ -80,12 +80,4 @@ Once inside the container, execute the inference script to measure latency and t
 python Scripts/Inference.py
 ```
 
-## 📁 Project Structure
-
-- [data/](data/): Dataset configuration and image/label directories.
-- [Scripts/](Scripts/): Core execution scripts for training, evaluation, and inference.
-- [Weights/](Weights/): Pre-trained and fine-tuned model weights.
-
----
-
 *This work is part of the research on automated pest management using the AgriScout robotic platform.*
