@@ -56,7 +56,7 @@ python Scripts/Eval.py
 
 This script performs multiple evaluation runs with different seeds to ensure statistical robustness.
 
-![Confusion Matrix](Git_Images/ConfusionMatrix.png)
+![Confusion Matrix](Git_Images/confusion_matrices.png)
 
 ## 🤖 Edge Inference (Jetson Orin Nano Super)
 
@@ -80,12 +80,12 @@ Once inside the container, execute the inference script to measure latency and t
 python Scripts/Inference.py
 ```
 
-![Inference Result](Git_Images/InferenceResult.png)
+![Inference Result](Git_Images/inference.png)
 
 ## 🐞 Beetle Infestation Mapping
 
 The AgriScout platform generates detailed spatial maps of beetle infestation across potato fields, enabling targeted pest management strategies.
 
-![Beetle Infestation Map](Git_Images/InfestationMap.png)
+![Beetle Infestation Map](Git_Images/Map.png)
 
 *This work is part of the research on automated pest management using the AgriScout robotic platform.*
