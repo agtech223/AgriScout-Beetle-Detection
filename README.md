@@ -19,8 +19,8 @@ This repository contains the implementation and evaluation of deep learning mode
 
 ## 📥 Data & Weights
 
-- **Trained Model Weights:** [Download from Google Drive](https://drive.google.com/drive/folders/11pgYOwI2JvhArmhCEP6eWZRKStDOUWNG?usp=sharing)
-- **Subset Dataset:** [Download from Google Drive](https://drive.google.com/drive/folders/16nKYBllKBIP34m2wgGFrXMrHCi6wg1dj?usp=sharing)
+- **Trained Model Weights:** [Download from Google Drive](https://drive.google.com/drive/folders/1uxXQPb5KvX-Sr6l8cYkVIThacANUsY8Z?usp=sharing)
+- **Subset Dataset:** [Download from Google Drive](https://drive.google.com/drive/folders/1FY1K1QakgS1CqIR2BEbb5pQAbpvOx9Ua?usp=sharing)
 
 ## 💻 Installation
 
@@ -56,7 +56,7 @@ python Scripts/Eval.py
 
 This script performs multiple evaluation runs with different seeds to ensure statistical robustness.
 
-![Detection Result](Git_Images/Result1.png)
+![Confusion Matrix](Git_Images/ConfusionMatrix.png)
 
 ## 🤖 Edge Inference (Jetson Orin Nano Super)
 
@@ -79,5 +79,13 @@ Once inside the container, execute the inference script to measure latency and t
 ```bash
 python Scripts/Inference.py
 ```
+
+![Inference Result](Git_Images/InferenceResult.png)
+
+## 🐞 Beetle Infestation Mapping
+
+The AgriScout platform generates detailed spatial maps of beetle infestation across potato fields, enabling targeted pest management strategies.
+
+![Beetle Infestation Map](Git_Images/InfestationMap.png)
 
 *This work is part of the research on automated pest management using the AgriScout robotic platform.*

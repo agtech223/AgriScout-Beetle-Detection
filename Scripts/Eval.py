@@ -9,9 +9,10 @@ import yaml
 import shutil
 
 # Configuration
-WEIGHTS_DIR = r"c:\Users\Bioresources\Desktop\GitHub\AgriScout-Beetle-Detection\Weights"
-DATA_YAML = r"c:\Users\Bioresources\Desktop\GitHub\AgriScout-Beetle-Detection\data\dataset.yaml"
-OUTPUT_DIR = r"c:\Users\Bioresources\Desktop\GitHub\AgriScout-Beetle-Detection\Inference_results"
+# IMPORTANT: Update the paths below to match your local machine
+WEIGHTS_DIR = r"AgriScout-Beetle-Detection\Weights"  # Update this path to your weights directory
+DATA_YAML = r"AgriScout-Beetle-Detection\data\dataset.yaml"  # Update this path to your dataset.yaml location
+OUTPUT_DIR = r"AgriScout-Beetle-Detection\Inference_results"  # Update this path to your desired output directory
 SEEDS = [42, 123, 2024, 7, 999]  # Use specific seeds for reproducibility
 NUM_RUNS = len(SEEDS)
 SUBSET_FRACTION = 0.9  # Use 90% of the test set for each run to get variation

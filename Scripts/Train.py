@@ -14,8 +14,9 @@ MODELS_TO_TEST = [
     "yolo12s.pt" 
 ]
 SEEDS = [42] 
-DATA_YAML = r"c:\Users\Bioresources\Desktop\GitHub\AgriScout-Beetle-Detection\data\dataset.yaml"
-PROJECT_DIR = r"c:\Users\Bioresources\Desktop\GitHub\AgriScout-Beetle-Detection\runs\train_comparison"
+# IMPORTANT: Update the paths below to match your local machine
+DATA_YAML = r"AgriScout-Beetle-Detection\data\dataset.yaml"  # Update this path to your dataset.yaml location
+PROJECT_DIR = r"AgriScout-Beetle-Detection\runs\train_comparison"  # Update this path to your desired output directory
 
 # Training Arguments (Hyperparameters + Augmentation)
 TRAIN_ARGS = {
