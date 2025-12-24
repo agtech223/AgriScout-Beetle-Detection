@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Graph Abstract](Git_Images/Graph_Abstract.png)
+![Graph Abstract](Git_Images/abstract.png)
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-ee4c2c?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
@@ -86,6 +86,6 @@ python Scripts/Inference.py
 
 The AgriScout platform generates detailed spatial maps of beetle infestation across potato fields, enabling targeted pest management strategies.
 
-![Beetle Infestation Map](Git_Images/Map.jpg)
+![Beetle Infestation Map](Git_Images/Map.png)
 
 *This work is part of the research on automated pest management using the AgriScout robotic platform.*
